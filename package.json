@@ -9,6 +9,8 @@
   "author": "Henry Tene T.",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.70.0"
   }
 }
