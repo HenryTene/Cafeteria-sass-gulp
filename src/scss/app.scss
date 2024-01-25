@@ -1,4 +1,8 @@
 $color:blue;
+$color2:green;
 body{
     background-color: $color;    
+}
+h1{
+    color: $color2;
 }
