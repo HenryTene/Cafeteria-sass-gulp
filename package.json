@@ -9,8 +9,14 @@
   "author": "Henry Tene T.",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.17",
     "gulp": "^4.0.0",
+    "gulp-postcss": "^9.1.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.70.0"
-  }
+  },
+  "browserslist":[
+    "last 1 version",
+    "> 1%"
+  ]
 }
