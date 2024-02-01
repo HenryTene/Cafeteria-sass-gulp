@@ -1,7 +1,13 @@
 const { src, dest, watch, series, parallel } = require("gulp");
+
+//CSS Y SASS
 const sass = require("gulp-sass")(require("sass"));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
+
+//Imagenes
+const imagemin=require('gulp-imagemin');
+
 function css(done) {
   //compilar sass
   //pasos: 1 - identificar archivo, 2 - compilarla , 3 - guardar el .css
@@ -13,7 +19,9 @@ function css(done) {
 }
 
 function imagenes() {
-  return src("src/img/**/*").pipe(dest("build/img"));
+  return src("src/img/**/*")
+        .pipe(imagemin({optimizationLevel:3}))
+        .pipe(dest("build/img"));
 }
 
 function dev() {
