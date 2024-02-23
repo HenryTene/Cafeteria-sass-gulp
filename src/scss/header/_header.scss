@@ -5,10 +5,9 @@
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  @include m.tablet { 
+  @include m.tablet {
     min-height: 70rem;
-   }
-
+  }
 
   &::before {
     content: "";
@@ -22,15 +21,14 @@
   }
   .contenido-header {
     position: relative;
-    h1{
+    h1 {
       text-align: center;
       color: v.$blanco;
       text-transform: uppercase;
       margin-top: 5rem;
-      @include m.tablet { 
+      @include m.tablet {
         margin-top: 10rem;
-        
-       }
+      }
     }
   }
 }
@@ -38,7 +36,6 @@
 .header-inicio {
   background-image: url(../img/header_inicio.jpg);
 }
-
 
 .header-nosotros {
   background-image: url(../img/header_nosotros.jpg);
@@ -53,4 +50,8 @@
 }
 .header-galeria {
   background-image: url(../img/header_galeria.jpg);
+}
+
+.header-contacto {
+  background-image: url(../img/header_contacto.jpg);
 }
